@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/addEditScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<GridLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="1"
+    android:orientation="vertical"
+    android:layout_marginTop="80dp"
+    android:useDefaultMargins="true" >
+
+    <EditText
+        android:id="@+id/questionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_question"
+        android:imeOptions="actionNext"
+        android:inputType="text" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/answerEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_answer"
+        android:imeOptions="actionNext"
+        android:inputType="text" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/firstEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_first"
+        android:imeOptions="actionNext"
+        android:inputType="text" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/secondEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_second"
+        android:imeOptions="actionNext"
+        android:inputType="text" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/thirdEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_third"
+        android:imeOptions="actionNext"
+        android:inputType="text" >
+    </EditText>
+
+    <SeekBar
+        android:id="@+id/seekBarTimer"
+        android:layout_width="211dp"
+        android:layout_marginLeft="60dp"
+        android:layout_row="6"
+        android:max="30"
+        android:progress="20"
+        android:indeterminate="false" />
+
+    <TextView
+        android:id="@+id/setTimer"
+        android:layout_column="0"
+        android:layout_gravity="left|top"
+        android:layout_marginLeft="10dp"
+        android:layout_row="5"
+        android:text="@string/set_timer"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/timerSetTextView"
+        android:layout_column="0"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="20dp"
+        android:layout_row="6" />
+
+    <Button
+        android:id="@+id/saveQuestionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/button_save_question" />
+
+</GridLayout>
+
+</ScrollView>
+
+
